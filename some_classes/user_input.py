@@ -2,8 +2,9 @@
 from my_figures import Figure
 
 def askUser():
-    s = input('How many sides? ')
-    z = input('What size? ')
+    '''CAREFUL - remember every user input returns a string'''
+    s = int( float( input('How many sides? ') ) ) # take the int of a float
+    z = float( input('What size? ') )
     c = input('What colour? ')
     n = input('Figure name? ')
     sh = Figure(s, z, c, n)
