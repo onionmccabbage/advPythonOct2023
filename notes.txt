@@ -21,14 +21,14 @@ Monday
   - what do you currently know
   - what do you want to know
 > classes 
-- abstract and concrete classes
-- validate types
-- inheritance
+> abstract and concrete classes
+> validate types: isinstance, type, int(float())
+> inheritance
 > name mangled members
 - if __name__== '__main__'
-- using decorators
-- which Python...
-- after lunch review
+> using decorators
+> which Python...
+> after lunch review
 - functional programming: map, filter and reduce
 - functional programming: parameters
 - comprehensions, generators and yield
