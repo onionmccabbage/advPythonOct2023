@@ -16,6 +16,7 @@ class Figure(Shape):
             self.__s_name = new_name
         else:
             pass
+    # if we like, we could write a new __str__ method just for this class
 
 if __name__ == '__main__':
     fig1 = Figure(colour='pink', num_sides=8, size=0.0000003, s_name='Octagon')
