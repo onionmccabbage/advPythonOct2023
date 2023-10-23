@@ -25,7 +25,7 @@ Monday
 - validate types
 - inheritance
 - name mangled members
-- if __name__== '__main__': revisited
+- if __name__== '__main__'
 - using decorators
 - after lunch review
 - functional programming: map, filter and reduce
