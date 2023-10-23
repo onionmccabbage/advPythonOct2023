@@ -6,12 +6,14 @@ Write decorated methods to get and set the property
 Invalid entries should default to 1
 Use 'name-mangling' for the actual property
 
-Declare a __str__ method which returns the number, the square of the number and the square root 
-  ( sqrt = n**0.5 # returns square root of n )
+Declare a __str__ method which returns the number, the square of the number 
+and the square root   ( sqrt = n**0.5 # returns square root of n )
 
 Exercise the code to show it works as expected ( if __name__ ...)
-Try to acces the name-mangled property directly from an instance of the class.
+Try to access the name-mangled property directly from outside an instance of the class.
+e.g.    t = myInst.__num # (should fail)
 See if you can set a value for this name-mangled property
+e.g.    myInst.__num = 99 # this seems to work but...
 
 At the end, some of you may like to show what you built
 
@@ -29,4 +31,6 @@ Alter your original class such that the property defaults to zero for any class 
 
 Write an abstract base class with the properties and methods of you class
 Make you class inherit from this abstract base
-Is it now possible to make a class that inherits fromthis abstract base and that does NOT implement the properties and methods of the abstract base?
+
+Is it now possible to make a class that inherits from this abstract base 
+and that does NOT implement the properties and methods of the abstract base?
