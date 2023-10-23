@@ -31,6 +31,7 @@ if __name__ == '__main__':
     r = NumberFun(100)
     print(r)
     # can we access name-mangled properties?
-    print( r.__num ) # fails
-    r._num = 99 # seems to work, but...
+    # print( r.__num ) # fails
+    r.__num = 99 # seems to work, but in fact makes an arbirary new property of 'r'
+    # remember - everything is an object and all objects always allow arbitrary properties
     print(r.num) # does not actually affect the value of __num
