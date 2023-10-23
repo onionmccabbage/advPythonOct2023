@@ -10,7 +10,7 @@ greet = 'Hello' # text string (a collection of characters)
 my_tup = (5,4,8,5,2,8,False, 'string', age, greet) # immutable indexed collection
 my_list = [5,4,8,5,2,8,False, 'string', age, greet] # mutable indexed collection
 my_set = {6, 4, 8, 8, 2, 3, 2} # unique members
-my_dictionary = {'name':'Floella', 'hero':True} # not indexed by number
+my_dictionary = {"name":'Floella', 'hero':True} # not indexed by number
 print(my_set)
 # data about shapes
 t = (3, 4.5, 'red')
