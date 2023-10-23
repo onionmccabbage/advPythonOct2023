@@ -27,6 +27,7 @@ Monday
 - name mangled members
 - if __name__== '__main__'
 - using decorators
+- which Python...
 - after lunch review
 - functional programming: map, filter and reduce
 - functional programming: parameters
