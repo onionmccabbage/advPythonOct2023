@@ -21,3 +21,5 @@ class Figure(Shape):
 if __name__ == '__main__':
     fig1 = Figure(colour='pink', num_sides=8, size=0.0000003, s_name='Octagon')
     print(fig1)
+    # we can see sompe intrinsicts of hte Figure class
+    print( Figure.__name__, Figure.__base__, Figure.__dict__, Shape.__dict__ )
