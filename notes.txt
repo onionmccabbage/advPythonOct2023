@@ -52,9 +52,10 @@ Tuesday
   ask questions, help each other, share code (screen-share)
 > we will be using the 'requests' library
   (you may come across the urllib.requests which is the old-skool way of doing things)
+- using slots with classes
 
 Wednesday
-- context manager to switch context e.g. for handling data input and output
+> context manager to switch context e.g. for handling data input and output
 - networking server/client (microservices)
 - overview of Flask
 - Testing: 
