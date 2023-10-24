@@ -1,12 +1,17 @@
 import sqlite3
 
+# we need to validate and nuance the input
+
 def customRead(w):
     '''read specific members fro mthe database'''
     conn = sqlite3.connect('my_db')
     curs = conn.cursor()
+    # SQL = will find an exact match
+    # SQL LIKE can make a case-insensitive match
+    # SQL LIKE allows wildcards: %s ends-with s% begins-with %s% contains
     st = f'''
     SELECT creature, count, cost FROM zoo
-    WHERE creature = "{w}"
+    WHERE creature LIKE "%{w}%"
     '''
     try:
         curs.execute(st)
@@ -20,4 +25,6 @@ def customRead(w):
 if __name__ == '__main__':
     w = input('Which creature? ')
     r = customRead(w)
-    print(r)
+    # iterate over any results
+    for animal in r:
+        print(f'We have {animal[1]} {animal[0]} costing {animal[2]}')
