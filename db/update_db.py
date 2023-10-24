@@ -10,7 +10,7 @@ def customUpdate(w):
     st = f'''
     UPDATE zoo
     SET count={q}
-    WHERE creatue = "{a}"
+    WHERE creature = "{a}"
     '''
     try:
         curs.execute(st)
