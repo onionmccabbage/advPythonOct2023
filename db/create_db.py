@@ -10,7 +10,7 @@ def accessDB():
     (
         creature VARCHAR(32) PRIMARY KEY,
         count int,
-        cost, float
+        cost float
     )
     '''
     try:
