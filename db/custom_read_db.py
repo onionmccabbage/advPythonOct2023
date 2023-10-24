@@ -9,6 +9,8 @@ def customRead(w):
     # SQL = will find an exact match
     # SQL LIKE can make a case-insensitive match
     # SQL LIKE allows wildcards: %s ends-with s% begins-with %s% contains
+    # NB to retrieeve string vlaues use double quotes in SQL
+    #    to retrieve numeric values do not use quotes in SQL
     st = f'''
     SELECT creature, count, cost FROM zoo
     WHERE creature LIKE "%{w}%"
