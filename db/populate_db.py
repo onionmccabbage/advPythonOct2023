@@ -28,8 +28,9 @@ def populateDB(creatures_t):
             conn.commit()
         except Exception as e:
             print(e)
-        if conn:
-            conn.close()
+    # after iterating over all the creatures, we can close the connection
+    if conn:
+        conn.close()
 
 if __name__ == '__main__':
     creatures_t = ( # normally this comes from JSON or API etc.
@@ -38,4 +39,5 @@ if __name__ == '__main__':
         {'creature':'Carp',     'count':120,    'cost':87.00},
         {'creature':'Deer',     'count':121,    'cost':12.99},
         {'creature':'Elk',      'count':7,      'cost':73.47},
-    )  
+    ) 
+    populateDB(creatures_t)
