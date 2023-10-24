@@ -18,6 +18,6 @@ if __name__ == '__main__':
     with open('my_stream.txt', 'a') as fobj: # we now have a file access object
         with outputRedirect(fobj):
             print('this will be written to our text file')
-            sys.stdout.write('more tet also context-switched')
+            sys.stdout.write('more text also context-switched')
 
     print('All context is returned to the original standard output stream')
