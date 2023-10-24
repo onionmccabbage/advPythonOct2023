@@ -1,5 +1,6 @@
-Advanced Python Review 2 until tea break at 3:00
+Advanced Python Review 2
 ========================
+You may need to use todos.json and posts.json (see repository)
 This is an opportunity to work with databases, or if you prefer 
 do the whole exercise with file read/write instead of databases
 
