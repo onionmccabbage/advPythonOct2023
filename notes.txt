@@ -25,20 +25,20 @@ Monday
 > validate types: isinstance, type, int(float())
 > inheritance
 > name mangled members
-- if __name__== '__main__'
+> if __name__== '__main__'
 > using decorators
 > which Python...
 > after lunch review
 > functional programming: map, filter and reduce
 > functional programming: parameters
 - comprehensions, generators and yield
-- Loading local and remote data (requests)
+> Loading local and remote data (requests)
 
 Tuesday
 > question: if elif
-- processing text/json
-  - json.loads() takes JSON and returns Python structure
-  - json.dumps() takes Python structure and returns JSON
+> processing text/json
+  > json.loads() takes JSON and returns Python structure
+  > json.dumps() takes Python structure and returns JSON
 > persisting files: read/write/append/exclusive/overwrite, text, bytes, json
 > redirect stdout
 > databases
@@ -48,10 +48,9 @@ Tuesday
 > populate db with sample data
 > read and nicely format values from the db
 > explore 'typicode' API as a static data source for JSON
-- after lunch review exercise 
-  the API is DOWN!!!
+> after lunch review exercise 
   ask questions, help each other, share code (screen-share)
-- we will be using the 'requests' library
+> we will be using the 'requests' library
   (you may come across the urllib.requests which is the old-skool way of doing things)
 
 Wednesday
