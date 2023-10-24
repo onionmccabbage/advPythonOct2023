@@ -13,15 +13,15 @@ class RedirectOut():
         '''the __enter__ method is invoked whenever this class or an instance of it is run'''
         self.orig_stdo = sys.stdout # remember the current system standard output
         sys.stdout = self.stdo # now the system standard output points to our new output stream
-    def __exit__(self):
+    def __exit__(self, exc_type, exc_value, exc_traceback): # exit MUST take these parameters
         '''The ___exit__ method is invoked when this class (or an instance) finishes running'''
         sys.stdout = self.orig_stdo # recover the original standard output stream
 
 if __name__== '__main__':
     # we can use 'with' as a means to work with a file access object
     with open('my_log.txt', 'a') as fobj:
-        r = RedirectOut() # an instance of our class
+        r = RedirectOut(fobj) # an instance of our class
         with r:
             print('this output will be sent to the text file')
         # when the 'with' ends, r is released
-        print('back to the normal standrad output')
+        print('back to the normal standard output')
