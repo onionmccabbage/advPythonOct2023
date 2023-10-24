@@ -7,8 +7,8 @@ def main():
     # userID integer
     # id integer (and primary key)
     # title is a string
-    # completed is  boolean (SQL uses true/false)
-    st = '''CREATE TABLE posts 
+    # completed is boolean (SQL uses true/false)
+    st = '''CREATE TABLE IF NOT EXISTS posts 
     (userID int,
     id INT PRIMARY KEY,
     title VARCHAR(32),
