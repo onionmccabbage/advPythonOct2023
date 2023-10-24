@@ -35,6 +35,7 @@ Monday
 - Loading local and remote data (requests)
 
 Tuesday
+> question: if elif
 - processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
