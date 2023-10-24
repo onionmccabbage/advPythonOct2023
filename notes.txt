@@ -44,7 +44,7 @@ Tuesday
 > databases
   see https://wiki.python.org/moin/DatabaseProgramming
 > other db connections (inc no-sql)
-- Create, Read and Update (and Delete) - CRUD operations
+> Create, Read and Update (and Delete) - CRUD operations
 > populate db with sample data
 > read and nicely format values from the db
 > explore 'typicode' API as a static data source for JSON
