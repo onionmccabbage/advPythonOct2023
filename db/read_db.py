@@ -5,7 +5,7 @@ def readDB():
     conn = sqlite3.connect('my_db')
     curs = conn.cursor()
     st = '''
-    SELECT * FROM zoo
+    SELECT creature, count, cost FROM zoo
     '''
     try:
         curs.execute(st)
