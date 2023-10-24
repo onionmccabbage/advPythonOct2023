@@ -1,4 +1,4 @@
-Advanced Python Review 2
+Advanced Python Review 2 until tea break at 3:00
 ========================
 This is an opportunity to work with databases, or if you prefer 
 do the whole exercise with file read/write instead of databases

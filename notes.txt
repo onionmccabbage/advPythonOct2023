@@ -49,6 +49,7 @@ Tuesday
 > read and nicely format values from the db
 > explore 'typicode' API as a static data source for JSON
 - after lunch review exercise 
+  the API is DOWN!!!
   ask questions, help each other, share code (screen-share)
 - we will be using the 'requests' library
   (you may come across the urllib.requests which is the old-skool way of doing things)
