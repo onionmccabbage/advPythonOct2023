@@ -37,7 +37,27 @@ def writeTextTofile(t):
     finally:
         pass # this always runs
 
+def readFromTextFile():
+    '''retreive text from a text file'''
+    fin = open('my_log.txt', 'rt') # 'r' will read
+    # r = fin.read() # reads back all of the content asd a single string object
+    # r = fin.readline() # reads the first available line (up to an end of line character)
+    r = fin.readlines() # reads the entire text into a list of single lines
+    return r
+
+def seekContent(n=18):
+    '''seek specific contentt within a text file'''
+    try:
+        fin = open('my_log.txt','rt')
+        fin.seek(n) # move  the file cursor to the position n
+        the_rest = fin.read()
+        fin.close()
+        return the_rest
+    except Exception as e:
+        print(e)
 
 if __name__ == '__main__':
     t = 'this might be a very large amount of text that we need to persist into a file without blocking the main thread'
     writeTextTofile(t)
+    print( readFromTextFile() )
+    print( seekContent() )
