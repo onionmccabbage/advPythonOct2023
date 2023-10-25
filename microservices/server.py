@@ -14,8 +14,15 @@ def server():
     print(f'Server is listening on port {port_t[1]} address {port_t[0]}')
     # we need a 'run loop'
     while True: # endless loop
-        pass
-
+        # unpack any request received
+        (client, addr) = server.accept() 
+        print(f'Request received from {client}, {addr}')
+        # read a portion of the client stream
+        buf = client.recv(1024) # just the first 1024 bytes
+        print(f'server received {buf}')
+        # we can choose to send a response
+        client.send( buf.upper() )
+        client.close()
 
 if __name__ == '__main__':
     # start our server
