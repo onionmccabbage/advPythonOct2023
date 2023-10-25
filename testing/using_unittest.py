@@ -18,7 +18,7 @@ class Point(object):
     def y(self):
         return self.__y
     @y.setter
-    def yx(self, new_y):
+    def y(self, new_y):
         if type(new_y)==int:
             self.__y = new_y
         else:
