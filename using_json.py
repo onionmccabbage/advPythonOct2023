@@ -1,4 +1,4 @@
-import json # his is a library available to python
+import json # this is a library available to python
 
 def main(s):
     '''take a python data structure and make it into a JSON structure'''

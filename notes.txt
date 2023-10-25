@@ -29,7 +29,7 @@ Monday
 > using decorators
 > which Python...
 > after lunch review
-> functional programming: map, filter and reduce
+> functional programming: map, filter and reduce  
 > functional programming: parameters
 > comprehensions, generators and yield
 > Loading local and remote data (requests)
@@ -52,9 +52,10 @@ Tuesday
   ask questions, help each other, share code (screen-share)
 > we will be using the 'requests' library
   (you may come across the urllib.requests which is the old-skool way of doing things)
-- using slots with classes
+> using slots with classes
 
 Wednesday
+- link for videos
 > context manager to switch context e.g. for handling data input and output
 - networking server/client (microservices)
 - overview of Flask
@@ -80,6 +81,7 @@ Thursday
 - zip, deque, iter etc
 - end of course feedback
 
+https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Ericsson_Advanced_Python/site/index.html
 Recordings usr neueda pwd c0nygre
 
 Other Useful Resources
