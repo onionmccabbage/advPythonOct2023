@@ -1,4 +1,4 @@
-Review 3 it is TEA BREAK until 3:15
+Review 3
 ========
 
 Client Server (Microservices):

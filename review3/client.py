@@ -16,6 +16,7 @@ def client():
         c = sys.argv[1]
         if c in valid_cat_t:
             message = '/'.join(sys.argv[1:])
+            print (message)
         else:
             message = ' '.join(sys.argv[1:]) # ignore the module name!
     else:
