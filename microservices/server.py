@@ -16,10 +16,17 @@ def server():
     while True: # endless loop
         # unpack any request received
         (client, addr) = server.accept() 
-        print(f'Request received from {client}, {addr}')
+        # print(f'Request received from {client}, {addr}')
+        print(f'Request received from {addr}')
         # read a portion of the client stream
         buf = client.recv(1024) # just the first 1024 bytes
         print(f'server received {buf}')
+        # we can provide a mechanism to stop the server
+        if buf==b'quit':
+            print('Server is closing')
+            server.close()
+            break # stop the run-loop
+
         # we can choose to send a response
         client.send( buf.upper() )
         client.close()
