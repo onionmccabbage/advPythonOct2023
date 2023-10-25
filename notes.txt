@@ -55,7 +55,7 @@ Tuesday
 > using slots with classes
 
 Wednesday
-- link for videos
+> link for videos
 > context manager to switch context e.g. for handling data input and output
 - networking server/client (microservices)
 - overview of Flask
