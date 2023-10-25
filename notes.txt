@@ -59,11 +59,11 @@ Wednesday
 > context manager to switch context e.g. for handling data input and output
 > networking server/client (microservices)
 - overview of Flask
-- Testing: 
-  - doctest revisited
+> Testing: 
+  > doctest revisited
   see https://docs.python.org/3/library/doctest.html
-  - unittest
-- after lunch lab exercise
+  > unittest
+> after lunch lab exercise
 - pytest see https://docs.pytest.org/
 
 Thursday
