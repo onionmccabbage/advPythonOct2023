@@ -11,7 +11,7 @@ class testPoint(unittest.TestCase):
     def testMoveBy(self):
         '''test the moveBy method alters x and y correctly'''
         self.point.moveBy(5, 2)
-        self.assertEqual(self.point.display, (8, 7))
+        self.assertEqual(self.point.display(), (8, 7))
 
 
 if __name__ == '__main__':
