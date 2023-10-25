@@ -1,0 +1,10 @@
+Server is listening on port 9874 address localhost
+Request received from ('127.0.0.1', 60787)
+server received b'default'
+Request received from ('127.0.0.1', 60788)
+server received b'coffee'
+Request received from ('127.0.0.1', 60789)
+server received b'doobiedoo'
+Request received from ('127.0.0.1', 60790)
+server received b'quit'
+Server is closing
