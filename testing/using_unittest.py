@@ -23,6 +23,12 @@ class Point(object):
             self.__y = new_y
         else:
             raise TypeError
+    def display(self):
+        return (self.x, self.y) # return a tuple
+    def moveBy(self, dx=0, dy=0):
+        '''move the point by dx and dy'''
+        self.x += dx
+        self.y += dy
 
 
-# we can write unittest to test the capabilities of our class
+# we can write unittest to test the capabilities of our class (in another module)
