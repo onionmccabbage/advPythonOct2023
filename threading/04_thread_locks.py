@@ -8,21 +8,34 @@ import random
 # we an lock shared resources to make them 'thread safe'
 
 counter = 1
+lock = threading.Lock() # we can use this to lock access to resources
 
 def workerA():
     'this worker will access a global counter to increment it'
     global counter # we now have access to the global asset
-    while counter <10:
-        counter += 1
-        print(f'Worker A is incrementing the counter to {counter}')
+    lock.acquire() # we now have exclusive access to the lock
+    try:
+        while counter <10:
+            counter += 1
+            print(f'Worker A is incrementing the counter to {counter}')
+    except Exception as e:
+        print(f'Something went wrong {e}')
+    finally:
+        lock.release() # release so any other threads might use it
 
 def workerB():
     'this worker will access a global counter to decrement it'
     global counter 
-    while counter >-10:
-        counter -= 1
-        print(f'Worker B is decrementing the counter to {counter}')
-
+    try:
+        lock.acquire() # we now have exclusive access to the lock
+        while counter >-10:
+            counter -= 1
+            print(f'Worker B is decrementing the counter to {counter}')
+    except Exception as e:
+        print(f'Something went wrong {e}')
+    finally:
+        lock.release() # release so any other threads might use it
+        
 if __name__ == '__main__':
     # normally these will act procedurally (one after the other)
     # workerB()
