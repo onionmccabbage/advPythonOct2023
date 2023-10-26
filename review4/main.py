@@ -7,10 +7,8 @@ from vehicles import Vehicles
 from planets import Planets
 from species import Species
 
-class Menu: # I chose not to descend fro mthe Thread class, but I can still call 'run()'
-
+class Menu: # I chose not to descend from the Thread class, but I can still call 'run()'
     categories = ('people', 'planets', 'species', 'vehicles')
-
     def __init__(self):
         self.menu_choices = {
             "1":self.getPeople,
@@ -19,7 +17,6 @@ class Menu: # I chose not to descend fro mthe Thread class, but I can still call
             "4":self.getSpecies,
             "5":self.quit
         }
-
     def showMenu(self):
         print('''Choose an option:
         1: get people
