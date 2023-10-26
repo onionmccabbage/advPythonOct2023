@@ -4,6 +4,7 @@
 # (or DB or file or API... any i/o bound operation)
 
 import threading # we will need Thread and Lock
+import sys
 import time
 import random
 
@@ -35,7 +36,13 @@ class TicketSeller(threading.Thread):
 if __name__ == '__main__':
     lock = threading.Lock()
     sellers_l = []
-    for _ in range(0, 4):
+    # we shoudl balance the likely numer of assets with the reasonable number of threads
+    if len(sys.argv)>1:
+        numThreads = int(float( sys.argv[1] ))
+    else:
+        numThreads = 4
+    
+    for _ in range(0, numThreads):
         seller = TicketSeller(lock)
         sellers_l.append(seller)
         seller.start()

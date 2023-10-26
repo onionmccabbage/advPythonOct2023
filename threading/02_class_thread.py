@@ -1,6 +1,11 @@
 from threading import Thread
 import time
+import timeit # timeit is a more accurate tool for masuring python times
 import random
+
+# Any python module can be profiled using cprofile
+#                    -o is the output filename
+# python -m cProfile -o profile_output 02_class_thread.py
 
 # Thread is a means by which Python can access system threads
 class MyClass(Thread):
@@ -23,7 +28,7 @@ if __name__ == '__main__':
     t2 = MyClass(2, 2) # this is effectively an instance of a Thread
     t3 = MyClass(3, 2) # this is effectively an instance of a Thread
     t4 = MyClass(4, 2) # this is effectively an instance of a Thread
-    start = time.time()
+    start = timeit.default_timer() # an accurate start time
     t1.start()
     t2.start()
     t3.start()
@@ -32,5 +37,5 @@ if __name__ == '__main__':
     t2.join() 
     t3.join() 
     t4.join()
-    end = time.time()
+    end = timeit.default_timer() # timeit tries to eliminate time spent on non-python things
     print(f'Overall time was {end-start}')
