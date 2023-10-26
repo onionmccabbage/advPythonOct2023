@@ -76,11 +76,11 @@ Thursday
   jython (Java) an ironpython (.NET) are NOT limited in this way
 > using thread locks
 - using thread events
-- Python has -O to optimize code (especially useful for threading)
+> Python has -O to optimize code (especially useful for threading)
   -O will attempt to optimize the code especially god for threading
-- logging, context mgr, often we log by time-stamp
+> logging, context mgr, often we log by time-stamp
 > named tuple
-- after lunch review
+> after lunch review
 - zip, deque, iter etc
 - end of course feedbacks (internal and Neueda)
   https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=VCT&ID=LD_Adhoc_MELA_1779&OID=511357&Title=Advanced%20Python&Owner=Randhir%20Ram
