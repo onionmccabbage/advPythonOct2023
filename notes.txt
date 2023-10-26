@@ -1,6 +1,6 @@
 Advanced Python
 ===============
-
+all my code is here:
 https://github.com/onionmccabbage/advPythonOct2023
 
 9:30 start
@@ -58,7 +58,7 @@ Wednesday
 > link for videos
 > context manager to switch context e.g. for handling data input and output
 > networking server/client (microservices)
-- overview of Flask
+> overview of Flask
 > Testing: (only really works if there is a good spec')
   > doctest revisited
   see https://docs.python.org/3/library/doctest.html
@@ -76,11 +76,13 @@ Thursday
 - using thread events
 - Python has -O to optimize code (especially useful for threading)
 - logging, context mgr, often we log by time-stamp
-- named tuple
+> named tuple
 - after lunch review
 - zip, deque, iter etc
-- end of course feedback
+- end of course feedbacks (internal and Neueda)
+  https://easyretro.io/publicboard/NTDqkkm6utgJFD9cdBrdb4sI6n72/1affe29b-4de6-42ae-a1a4-b3e96ed70cf3
 
+Course Website
 https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Ericsson_Advanced_Python/site/index.html
 Recordings usr neueda pwd c0nygre
 
