@@ -68,8 +68,8 @@ Wednesday
 
 Thursday
 - profiling: timings etc. (cprofile)
-- multithreading, also limits of mutlithreading concurrency
-  - how threads are done
+> multithreading, also limits of mutlithreading concurrency
+  > how threads are done
   - concurrency and resources (lock shared resources)
 - the global Interpreter Lock (GIL) will affect threading performance
 - using thread locks

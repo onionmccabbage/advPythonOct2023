@@ -11,3 +11,4 @@ print(sys.maxsize ) # the largest size object that python can exist in memory
 print(sys.version_info)
 print(sys.platform)
 print(sys.base_prefix) # the location of python on this o/s
+print(sys.path) # all the places Python will look for imports
