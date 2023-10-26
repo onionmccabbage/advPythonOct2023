@@ -26,8 +26,8 @@ def workerA():
 def workerB():
     'this worker will access a global counter to decrement it'
     global counter 
+    lock.acquire() # we now have exclusive access to the lock
     try:
-        lock.acquire() # we now have exclusive access to the lock
         while counter >-10:
             counter -= 1
             print(f'Worker B is decrementing the counter to {counter}')
@@ -35,7 +35,7 @@ def workerB():
         print(f'Something went wrong {e}')
     finally:
         lock.release() # release so any other threads might use it
-        
+
 if __name__ == '__main__':
     # normally these will act procedurally (one after the other)
     # workerB()
@@ -44,7 +44,7 @@ if __name__ == '__main__':
     t1 = threading.Thread(target=workerA)
     t2 = threading.Thread(target=workerB)
     # both threads will try to alter the counter
-    t1.start()
+    t1.start() # whichever thread starts first will get first dibs on the lock
     t2.start()
     t1.join()
     t2.join()
