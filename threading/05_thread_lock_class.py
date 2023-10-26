@@ -28,6 +28,7 @@ class TicketSeller(threading.Thread):
                 self.ticketsSold += 1
                 print(f'Sold a ticket, {ticketsAvailable} remaining')
             self.__lock.release() # pnly hang on to the lock for the shortest time
+        print(f'Sold {self.ticketsSold}')
     def randomDelay(self):
         time.sleep(random.randint(0,4)/4) # 0, 0.25, 0.5 0.75
 
