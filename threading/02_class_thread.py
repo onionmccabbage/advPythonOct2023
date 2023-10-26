@@ -29,8 +29,8 @@ if __name__ == '__main__':
     t3.start()
     t4.start()
     t1.join() # this blocks the main thread until the sub thread joins back
-    t2.join() # this blocks the main thread until the sub thread joins back
-    t3.join() # this blocks the main thread until the sub thread joins back
-    t4.join() # this blocks the main thread until the sub thread joins back
+    t2.join() 
+    t3.join() 
+    t4.join()
     end = time.time()
     print(f'Overall time was {end-start}')
