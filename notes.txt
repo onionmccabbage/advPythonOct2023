@@ -67,12 +67,14 @@ Wednesday
 > pytest see https://docs.pytest.org/
 
 Thursday
-- profiling: timings etc. (cprofile)
+> profiling: timings etc. (cprofile)
 > multithreading, also limits of mutlithreading concurrency
   > how threads are done
-  - concurrency and resources (lock shared resources)
+  > concurrency and resources (lock shared resources)
 - the global Interpreter Lock (GIL) will affect threading performance
-- using thread locks
+  the classic cpython will be stymied by the GIL
+  jython (Java) an ironpython (.NET) are NOT limited in this way
+> using thread locks
 - using thread events
 - Python has -O to optimize code (especially useful for threading)
 - logging, context mgr, often we log by time-stamp
